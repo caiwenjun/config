@@ -12,7 +12,7 @@
   --5blue: #eabeb4;
   --ul: #00aba9;
   --ol: #4289f6;
-  --table-odd: #88d8b0;
+  --table-odd: #56E39D;
   --table-even: #ffcc5c;
   --code: #28bd00;
   background-color: #fafafa !important;
@@ -187,24 +187,19 @@ table {
   border-spacing: 0;
   font-size: 1em;
   font: inherit;
-  border: 0;
+  border: 1.5px solid black;
   margin: 0 auto;
 }
 
 tbody {
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 table tr {
-  border: 0;
-  border-top: 1px solid #ccc;
-  background-color: white;
   margin: 0;
   padding: 0;
 }
-
 table tr:nth-child(2n) {
   background-color: var(--table-even);
 }
@@ -214,14 +209,14 @@ table tr:nth-child(2n-1) {
 
 table tr th,
 table tr td {
+  color: #333;
   font-size: 16px;
-  border: 1px solid #ccc;
   margin: 0;
   padding: 5px 10px;
+  border: 1.5px solid black;
 }
 
 table tr th {
   font-weight: bold;
-  color: white;
-  border: 1px solid #009688;
+  color: #F0293E;
 }
