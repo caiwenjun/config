@@ -29,7 +29,7 @@ code {
   white-space: pre-wrap;
   border-radius: 2px;
   display: inline;
-  color: hsl(119, 74%, 44%);
+  color: var(--code);
   font-size: 1.05em;
 }
 
@@ -101,13 +101,14 @@ ol {
 }
 ol + ul {
   margin-left:20px;
-  font-size: 0.96rem;
+  font-size: 96%;
 }
-ol ol {
+ul ol{
   color: var(--ul);
+  font-size: 96%;
 }
 li ul {
-  font-size: 0.92rem;
+  font-size: 96%;
   color: #393b49;
 }
 dl {

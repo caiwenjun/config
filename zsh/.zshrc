@@ -10,14 +10,15 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="wedisagree"
 
-export z="zoxide"
+alias r="ranger"
 export all_proxy=http://127.0.0.1:7890   # 设置代理
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST  # 设置zsh 转储位置
+export EDITOR=nvim  # 这里可以换成你想要的编辑器，如 vim, nano, code 等
+export VISUAL=nvim  # VISUAL 通常是在需要 GUI 编辑器时使用
 
 plugins=(
   sudo 
-  fig 
-  zoxide
+  z
   vi-mode 
   zsh-autosuggestions 
   zsh-syntax-highlighting
@@ -119,3 +120,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(zoxide init zsh)"
+
+# bun completions
+[ -s "/home/cwj/.bun/_bun" ] && source "/home/cwj/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
